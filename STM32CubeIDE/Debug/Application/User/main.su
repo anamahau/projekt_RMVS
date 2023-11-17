@@ -1,0 +1,5 @@
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/Core/Src/main.c:597:6:StartDefaultTask	8	static
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/Core/Src/main.c:176:6:SystemClock_Config	136	static
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/Core/Src/main.c:87:5:main	128	static,ignoring_inline_asm
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/Core/Src/main.c:688:6:HAL_TIM_PeriodElapsedCallback	0	static
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/Core/Src/main.c:705:6:Error_Handler	0	static

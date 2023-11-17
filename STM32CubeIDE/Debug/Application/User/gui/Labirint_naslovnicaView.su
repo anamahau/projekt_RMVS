@@ -1,0 +1,8 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/labirint_naslovnica_screen/Labirint_naslovnicaView.cpp:13:6:virtual void Labirint_naslovnicaView::tearDownScreen()	0	static
+../../TouchGFX/gui/include/gui/labirint_naslovnica_screen/Labirint_naslovnicaView.hpp:11:13:Labirint_naslovnicaView::~Labirint_naslovnicaView()	8	static
+../../TouchGFX/gui/include/gui/labirint_naslovnica_screen/Labirint_naslovnicaView.hpp:11:13:virtual Labirint_naslovnicaView::~Labirint_naslovnicaView()	8	static
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/labirint_naslovnica_screen/Labirint_naslovnicaView.cpp:3:1:Labirint_naslovnicaView::Labirint_naslovnicaView()	8	static
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/labirint_naslovnica_screen/Labirint_naslovnicaView.cpp:8:6:virtual void Labirint_naslovnicaView::setupScreen()	0	static

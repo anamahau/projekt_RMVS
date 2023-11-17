@@ -1,0 +1,8 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/kaca2_screen/Kaca2View.cpp:13:6:virtual void Kaca2View::tearDownScreen()	0	static
+../../TouchGFX/gui/include/gui/kaca2_screen/Kaca2View.hpp:11:13:Kaca2View::~Kaca2View()	8	static
+../../TouchGFX/gui/include/gui/kaca2_screen/Kaca2View.hpp:11:13:virtual Kaca2View::~Kaca2View()	8	static
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/kaca2_screen/Kaca2View.cpp:3:1:Kaca2View::Kaca2View()	8	static
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/kaca2_screen/Kaca2View.cpp:8:6:virtual void Kaca2View::setupScreen()	0	static

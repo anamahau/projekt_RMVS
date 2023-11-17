@@ -1,0 +1,6 @@
+../../TouchGFX/gui/include/gui/labirint_screen/LabirintPresenter.hpp:28:13:LabirintPresenter::~LabirintPresenter()	1
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/labirint_screen/LabirintPresenter.cpp:10:6:virtual void LabirintPresenter::activate()	1
+../../TouchGFX/gui/include/gui/labirint_screen/LabirintPresenter.hpp:28:13:virtual LabirintPresenter::~LabirintPresenter()	1
+../../TouchGFX/gui/include/gui/labirint_screen/LabirintPresenter.hpp:28:13:virtual void* LabirintPresenter::_ZThn4_N17LabirintPresenterD1Ev()	1
+../../TouchGFX/gui/include/gui/labirint_screen/LabirintPresenter.hpp:28:13:virtual void* LabirintPresenter::_ZThn4_N17LabirintPresenterD0Ev()	1
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/labirint_screen/LabirintPresenter.cpp:4:1:LabirintPresenter::LabirintPresenter(LabirintView&)	1

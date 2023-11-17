@@ -1,0 +1,22 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/kaca_screen/KacaViewBase.hpp:26:18:virtual void KacaViewBase::drawMaze()	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/kaca_screen/KacaViewBase.hpp:30:18:virtual void KacaViewBase::goU()	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/kaca_screen/KacaViewBase.hpp:34:18:virtual void KacaViewBase::goR()	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/kaca_screen/KacaViewBase.hpp:38:18:virtual void KacaViewBase::goD()	1
+../../TouchGFX/generated/gui_generated/include/gui_generated/kaca_screen/KacaViewBase.hpp:42:18:virtual void KacaViewBase::goL()	1
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/generated/gui_generated/src/kaca_screen/KacaViewBase.cpp:888:1:KacaViewBase::~KacaViewBase()	1
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/generated/gui_generated/src/kaca_screen/KacaViewBase.cpp:893:6:virtual void KacaViewBase::setupScreen()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<KacaViewBase, const touchgfx::AbstractButton&>::~Callback()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = KacaViewBase; T1 = const touchgfx::AbstractButton&]	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = KacaViewBase; T1 = const touchgfx::AbstractButton&]	3
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<KacaViewBase, const touchgfx::AbstractButton&>::~Callback()	1
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/generated/gui_generated/src/kaca_screen/KacaViewBase.cpp:888:1:virtual KacaViewBase::~KacaViewBase()	1
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/generated/gui_generated/src/kaca_screen/KacaViewBase.cpp:898:6:void KacaViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	12
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/generated/gui_generated/src/kaca_screen/KacaViewBase.cpp:8:1:KacaViewBase::KacaViewBase()	1

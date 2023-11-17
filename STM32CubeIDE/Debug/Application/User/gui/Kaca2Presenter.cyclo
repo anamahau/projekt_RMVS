@@ -1,0 +1,6 @@
+../../TouchGFX/gui/include/gui/kaca2_screen/Kaca2Presenter.hpp:28:13:Kaca2Presenter::~Kaca2Presenter()	1
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/kaca2_screen/Kaca2Presenter.cpp:10:6:virtual void Kaca2Presenter::activate()	1
+../../TouchGFX/gui/include/gui/kaca2_screen/Kaca2Presenter.hpp:28:13:virtual Kaca2Presenter::~Kaca2Presenter()	1
+../../TouchGFX/gui/include/gui/kaca2_screen/Kaca2Presenter.hpp:28:13:virtual void* Kaca2Presenter::_ZThn4_N14Kaca2PresenterD1Ev()	1
+../../TouchGFX/gui/include/gui/kaca2_screen/Kaca2Presenter.hpp:28:13:virtual void* Kaca2Presenter::_ZThn4_N14Kaca2PresenterD0Ev()	1
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/kaca2_screen/Kaca2Presenter.cpp:4:1:Kaca2Presenter::Kaca2Presenter(Kaca2View&)	1

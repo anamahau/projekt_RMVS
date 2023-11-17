@@ -1,0 +1,13 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/labirint_screen/LabirintView.cpp:16:6:virtual void LabirintView::tearDownScreen()	1
+../../TouchGFX/gui/include/gui/labirint_screen/LabirintView.hpp:11:13:LabirintView::~LabirintView()	1
+../../TouchGFX/gui/include/gui/labirint_screen/LabirintView.hpp:11:13:virtual LabirintView::~LabirintView()	1
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/labirint_screen/LabirintView.cpp:6:1:LabirintView::LabirintView()	1
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/labirint_screen/LabirintView.cpp:11:6:virtual void LabirintView::setupScreen()	1
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/labirint_screen/LabirintView.cpp:21:6:virtual void LabirintView::drawMaze()	181
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/labirint_screen/LabirintView.cpp:382:6:virtual void LabirintView::goU()	3
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/labirint_screen/LabirintView.cpp:397:6:virtual void LabirintView::goR()	5
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/labirint_screen/LabirintView.cpp:419:6:virtual void LabirintView::goD()	3
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/TouchGFX/gui/src/labirint_screen/LabirintView.cpp:434:6:virtual void LabirintView::goL()	4

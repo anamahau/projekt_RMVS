@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.22.1">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_Z826" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Lorem ipsum dolor sit amet,&#10;consectetur adipiscing elit,&#10;sed do eiusmod tempor&#10;incididunt ut labore et dolore&#10;magna aliqua. Ut enim ad&#10;minim veniam, quis nostrud&#10;exercitation ullamco laboris&#10;nisi ut aliquip ex ea commodo&#10;consequat. Duis aute irure&#10;dolor in reprehenderit in&#10;voluptate velit esse cillum&#10;dolore eu fugiat nulla pariatur.&#10;Excepteur sint occaecat&#10;cupidatat non proident, sunt&#10;in culpa qui officia deserunt&#10;mollit anim id est laborum.</Translation>
+      </Text>
+      <Text Id="__SingleUse_84ER" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">IGRAJ</Translation>
+      </Text>
+      <Text Id="__SingleUse_YJVH" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">Navodila</Translation>
+      </Text>
+      <Text Id="__SingleUse_6QUR" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Lorem ipsum dolor sit amet,&#10;consectetur adipiscing elit,&#10;sed do eiusmod tempor&#10;incididunt ut labore et dolore&#10;magna aliqua. Ut enim ad&#10;minim veniam, quis nostrud&#10;exercitation ullamco laboris&#10;nisi ut aliquip ex ea commodo&#10;consequat. Duis aute irure&#10;dolor in reprehenderit in&#10;voluptate velit esse cillum&#10;dolore eu fugiat nulla pariatur.&#10;Excepteur sint occaecat&#10;cupidatat non proident, sunt&#10;in culpa qui officia deserunt&#10;mollit anim id est laborum.</Translation>
+      </Text>
+      <Text Id="__SingleUse_44XL" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">IGRAJ</Translation>
+      </Text>
+      <Text Id="__SingleUse_PUJQ" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">Navodila</Translation>
+      </Text>
+      <Text Id="__SingleUse_H2KZ" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">Izberi igro</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+  </Typographies>
+</TextDatabase>

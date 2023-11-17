@@ -1,0 +1,9 @@
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/Middlewares/Third_Party/LibJPEG/source/jcsample.c:84:1:start_pass_downsample	0	static
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/Middlewares/Third_Party/LibJPEG/source/jcsample.c:123:1:sep_downsample	48	static
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/Middlewares/Third_Party/LibJPEG/source/jcsample.c:150:1:int_downsample	64	static
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/Middlewares/Third_Party/LibJPEG/source/jcsample.c:224:1:h2v1_downsample	40	static
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/Middlewares/Third_Party/LibJPEG/source/jcsample.c:261:1:h2v2_downsample	48	static
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/Middlewares/Third_Party/LibJPEG/source/jcsample.c:305:1:h2v2_smooth_downsample	80	static
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/Middlewares/Third_Party/LibJPEG/source/jcsample.c:406:1:fullsize_smooth_downsample	72	static
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/Middlewares/Third_Party/LibJPEG/source/jcsample.c:199:1:fullsize_downsample	32	static
+D:/Izobrazevanje/4_FE_UNI_LJ/4._letnik/1._semester/Robotski_in_merilni_vgrajeni_sistemi/TouchGFX/Igre/Middlewares/Third_Party/LibJPEG/source/jcsample.c:478:1:jinit_downsampler	40	static

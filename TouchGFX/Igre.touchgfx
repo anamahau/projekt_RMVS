@@ -1,0 +1,5216 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Seznam",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 480,
+            "Height": 272,
+            "Color": {
+              "Red": 184,
+              "Green": 245,
+              "Blue": 243
+            }
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "labirint",
+            "X": 87,
+            "Y": 115,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_small_outline_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_small_outline_action.png",
+            "IconPressed": "maze2.png",
+            "IconReleased": "maze2.png",
+            "IconX": 18,
+            "IconY": 18,
+            "IconHeight": 64,
+            "IconWidth": 64
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "kaca",
+            "X": 293,
+            "Y": 115,
+            "Width": 100,
+            "Height": 100,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_small_outline_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_small_outline_action.png",
+            "IconPressed": "snake2.png",
+            "IconReleased": "snake2.png",
+            "IconX": 18,
+            "IconY": 18,
+            "IconHeight": 64,
+            "IconWidth": 64
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 137,
+            "Y": 19,
+            "Width": 206,
+            "Height": 49,
+            "TextId": "__SingleUse_H2KZ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 254,
+              "Green": 189,
+              "Blue": 23
+            },
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "izbira_labirinta",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "labirint"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Labirint_naslovnica"
+            }
+          },
+          {
+            "InteractionName": "izbira_kace",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "kaca"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Kaca_naslovnica"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Labirint_naslovnica",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 480,
+            "Height": 272,
+            "Color": {
+              "Red": 210,
+              "Green": 235,
+              "Blue": 188
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 64,
+            "Y": 13,
+            "Width": 173,
+            "Height": 48,
+            "TextId": "__SingleUse_PUJQ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 81,
+              "Green": 178,
+              "Blue": 11
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "play_button",
+            "X": 347,
+            "Y": 111,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_action.png",
+            "TextId": "__SingleUse_44XL",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ScrollableContainer",
+            "Name": "scrollableContainer1",
+            "Y": 61,
+            "Width": 329,
+            "Height": 211,
+            "HorizontalScrollEnabled": true,
+            "VerticalScrollEnabled": true,
+            "ScrollbarsVisible": true,
+            "ScrollbarsVisibleOnPressed": true,
+            "ScrollbarsAlpha": 255,
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "textArea2",
+                "X": 6,
+                "Y": 7,
+                "Width": 316,
+                "Height": 384,
+                "TextId": "__SingleUse_6QUR",
+                "TextRotation": "0",
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "back_button",
+            "X": 372,
+            "Y": 188,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_outline_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_outline_action.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_arrow_back_50_50_FEBD17.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_arrow_back_50_50_FEBD17.svg.png",
+            "IconX": 5,
+            "IconY": 5,
+            "IconHeight": 50,
+            "IconWidth": 50
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "back_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Seznam"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "play_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionBlock",
+              "ActionComponent": "Labirint"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Kaca_naslovnica",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 480,
+            "Height": 272,
+            "Color": {
+              "Red": 210,
+              "Green": 235,
+              "Blue": 188
+            }
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "back_button",
+            "X": 372,
+            "Y": 188,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_outline_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_outline_action.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_arrow_back_50_50_FEBD17.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_arrow_back_50_50_FEBD17.svg.png",
+            "IconX": 5,
+            "IconY": 5,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "ScrollableContainer",
+            "Name": "scrollableContainer1",
+            "Y": 61,
+            "Width": 329,
+            "Height": 211,
+            "HorizontalScrollEnabled": true,
+            "VerticalScrollEnabled": true,
+            "ScrollbarsVisible": true,
+            "ScrollbarsVisibleOnPressed": true,
+            "ScrollbarsAlpha": 255,
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "textArea2",
+                "X": 6,
+                "Y": 7,
+                "Width": 316,
+                "Height": 384,
+                "TextId": "__SingleUse_Z826",
+                "TextRotation": "0",
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "play_button",
+            "X": 347,
+            "Y": 111,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_action.png",
+            "TextId": "__SingleUse_84ER",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 64,
+            "Y": 13,
+            "Width": 173,
+            "Height": 48,
+            "TextId": "__SingleUse_YJVH",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 81,
+              "Green": 178,
+              "Blue": 11
+            },
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "back_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Seznam"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "play_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionBlock",
+              "ActionComponent": "Kaca"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Labirint",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 480,
+            "Height": 272,
+            "LockPosition": true,
+            "Color": {
+              "Red": 80,
+              "Green": 119,
+              "Blue": 140
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "start",
+            "X": 396,
+            "Y": 72,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_action.png"
+          },
+          {
+            "Type": "Container",
+            "Name": "container1",
+            "Width": 336,
+            "Height": 264,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "Box",
+                "Name": "b10_1",
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_1",
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_1",
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_1",
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_1",
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_1",
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_1",
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_1",
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_1",
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_1",
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_1",
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_2",
+                "X": 24,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_2",
+                "X": 24,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_2",
+                "X": 24,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_2",
+                "X": 24,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_2",
+                "X": 24,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_2",
+                "X": 24,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_2",
+                "X": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_2",
+                "X": 24,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_2",
+                "X": 24,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_2",
+                "X": 24,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_2",
+                "X": 24,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_3",
+                "X": 48,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_3",
+                "X": 48,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_3",
+                "X": 48,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_3",
+                "X": 48,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_3",
+                "X": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_3",
+                "X": 48,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_3",
+                "X": 48,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_3",
+                "X": 48,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_3",
+                "X": 48,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_3",
+                "X": 48,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_3",
+                "X": 48,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_4",
+                "X": 72,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_4",
+                "X": 72,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_4",
+                "X": 72,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_4",
+                "X": 72,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_4",
+                "X": 72,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_4",
+                "X": 72,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_4",
+                "X": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_4",
+                "X": 72,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_4",
+                "X": 72,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_4",
+                "X": 72,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_4",
+                "X": 72,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_8",
+                "X": 168,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_8",
+                "X": 168,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_8",
+                "X": 168,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_8",
+                "X": 168,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_8",
+                "X": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_8",
+                "X": 168,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_8",
+                "X": 168,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_8",
+                "X": 168,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_8",
+                "X": 168,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_8",
+                "X": 168,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_8",
+                "X": 168,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_7",
+                "X": 144,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_7",
+                "X": 144,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_7",
+                "X": 144,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_7",
+                "X": 144,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_7",
+                "X": 144,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_7",
+                "X": 144,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_7",
+                "X": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_7",
+                "X": 144,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_7",
+                "X": 144,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_7",
+                "X": 144,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_7",
+                "X": 144,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_6",
+                "X": 120,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_6",
+                "X": 120,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_6",
+                "X": 120,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_6",
+                "X": 120,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_6",
+                "X": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_6",
+                "X": 120,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_6",
+                "X": 120,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_6",
+                "X": 120,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_6",
+                "X": 120,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_6",
+                "X": 120,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_6",
+                "X": 120,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_5",
+                "X": 96,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_5",
+                "X": 96,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_5",
+                "X": 96,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_5",
+                "X": 96,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_5",
+                "X": 96,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_5",
+                "X": 96,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_5",
+                "X": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_5",
+                "X": 96,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_5",
+                "X": 96,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_5",
+                "X": 96,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_5",
+                "X": 96,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_9",
+                "X": 192,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_9",
+                "X": 192,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_9",
+                "X": 192,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_9",
+                "X": 192,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_9",
+                "X": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_9",
+                "X": 192,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_9",
+                "X": 192,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_9",
+                "X": 192,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_9",
+                "X": 192,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_9",
+                "X": 192,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_9",
+                "X": 192,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_10",
+                "X": 216,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_10",
+                "X": 216,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_10",
+                "X": 216,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_10",
+                "X": 216,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_10",
+                "X": 216,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_10",
+                "X": 216,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_10",
+                "X": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_10",
+                "X": 216,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_10",
+                "X": 216,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_10",
+                "X": 216,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_10",
+                "X": 216,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_11",
+                "X": 240,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_11",
+                "X": 240,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_11",
+                "X": 240,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_11",
+                "X": 240,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_11",
+                "X": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_11",
+                "X": 240,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_11",
+                "X": 240,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_11",
+                "X": 240,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_11",
+                "X": 240,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_11",
+                "X": 240,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_11",
+                "X": 240,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_12",
+                "X": 264,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_12",
+                "X": 264,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_12",
+                "X": 264,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_12",
+                "X": 264,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_12",
+                "X": 264,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_12",
+                "X": 264,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_12",
+                "X": 264,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_12",
+                "X": 264,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_12",
+                "X": 264,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_12",
+                "X": 264,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_12",
+                "X": 264,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_14",
+                "X": 312,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_14",
+                "X": 312,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_14",
+                "X": 312,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_14",
+                "X": 312,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_14",
+                "X": 312,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_14",
+                "X": 312,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_14",
+                "X": 312,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_14",
+                "X": 312,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_14",
+                "X": 312,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_14",
+                "X": 312,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_14",
+                "X": 312,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_13",
+                "X": 288,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_13",
+                "X": 288,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_13",
+                "X": 288,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_13",
+                "X": 288,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_13",
+                "X": 288,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_13",
+                "X": 288,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_13",
+                "X": 288,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_13",
+                "X": 288,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_13",
+                "X": 288,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_13",
+                "X": 288,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_13",
+                "X": 288,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Box",
+            "Name": "obj",
+            "X": 416,
+            "Y": 208,
+            "Width": 20,
+            "Height": 20,
+            "Color": {
+              "Red": 254,
+              "Green": 189,
+              "Blue": 23
+            }
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonL",
+            "X": 372,
+            "Y": 200,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_chevron_left_53_53_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_chevron_left_53_53_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 53,
+            "IconWidth": 53,
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonD",
+            "X": 408,
+            "Y": 236,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_expand_more_53_53_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_expand_more_53_53_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 53,
+            "IconWidth": 53,
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonR",
+            "X": 444,
+            "Y": 200,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_chevron_right_53_53_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_chevron_right_53_53_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 53,
+            "IconWidth": 53,
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonU",
+            "X": 408,
+            "Y": 164,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_expand_less_53_53_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_expand_less_53_53_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 53,
+            "IconWidth": 53,
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonWithIcon1",
+            "X": 444,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_normal.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_normal.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_action_home_filled_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "goHome",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithIcon1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionBlock",
+              "ActionComponent": "Labirint_naslovnica"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "start"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "drawMaze"
+            }
+          },
+          {
+            "InteractionName": "goU",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonU"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "goU"
+            }
+          },
+          {
+            "InteractionName": "goR",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonR"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "goR"
+            }
+          },
+          {
+            "InteractionName": "goD",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonD"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "goD"
+            }
+          },
+          {
+            "InteractionName": "goL",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonL"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "goL"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Kaca",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 480,
+            "Height": 272,
+            "LockPosition": true,
+            "Color": {
+              "Red": 80,
+              "Green": 119,
+              "Blue": 140
+            }
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonWithIcon1",
+            "X": 444,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_normal.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_normal.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_action_home_filled_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonU",
+            "X": 408,
+            "Y": 164,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_expand_less_53_53_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_expand_less_53_53_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 53,
+            "IconWidth": 53,
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonR",
+            "X": 444,
+            "Y": 200,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_chevron_right_53_53_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_chevron_right_53_53_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 53,
+            "IconWidth": 53,
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonD",
+            "X": 408,
+            "Y": 236,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_expand_more_53_53_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_expand_more_53_53_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 53,
+            "IconWidth": 53,
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "buttonL",
+            "X": 372,
+            "Y": 200,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_chevron_left_53_53_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_chevron_left_53_53_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 53,
+            "IconWidth": 53,
+            "Preset": "alternate_theme\\presets\\button\\icon\\rounded\\micro_fill_disabled.json"
+          },
+          {
+            "Type": "Container",
+            "Name": "container1",
+            "Width": 336,
+            "Height": 264,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "Box",
+                "Name": "b10_1",
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_1",
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_1",
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_1",
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_1",
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_1",
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_1",
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_1",
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_1",
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_1",
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_1",
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_2",
+                "X": 24,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_2",
+                "X": 24,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_2",
+                "X": 24,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_2",
+                "X": 24,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_2",
+                "X": 24,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_2",
+                "X": 24,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_2",
+                "X": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_2",
+                "X": 24,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_2",
+                "X": 24,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_2",
+                "X": 24,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_2",
+                "X": 24,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_3",
+                "X": 48,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_3",
+                "X": 48,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_3",
+                "X": 48,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_3",
+                "X": 48,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_3",
+                "X": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_3",
+                "X": 48,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_3",
+                "X": 48,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_3",
+                "X": 48,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_3",
+                "X": 48,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_3",
+                "X": 48,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_3",
+                "X": 48,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_4",
+                "X": 72,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_4",
+                "X": 72,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_4",
+                "X": 72,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_4",
+                "X": 72,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_4",
+                "X": 72,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_4",
+                "X": 72,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_4",
+                "X": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_4",
+                "X": 72,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_4",
+                "X": 72,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_4",
+                "X": 72,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_4",
+                "X": 72,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_8",
+                "X": 168,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_8",
+                "X": 168,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_8",
+                "X": 168,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_8",
+                "X": 168,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_8",
+                "X": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_8",
+                "X": 168,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_8",
+                "X": 168,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_8",
+                "X": 168,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_8",
+                "X": 168,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_8",
+                "X": 168,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_8",
+                "X": 168,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_7",
+                "X": 144,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_7",
+                "X": 144,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_7",
+                "X": 144,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_7",
+                "X": 144,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_7",
+                "X": 144,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_7",
+                "X": 144,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_7",
+                "X": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_7",
+                "X": 144,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_7",
+                "X": 144,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_7",
+                "X": 144,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_7",
+                "X": 144,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_6",
+                "X": 120,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_6",
+                "X": 120,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_6",
+                "X": 120,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_6",
+                "X": 120,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_6",
+                "X": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_6",
+                "X": 120,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_6",
+                "X": 120,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_6",
+                "X": 120,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_6",
+                "X": 120,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_6",
+                "X": 120,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_6",
+                "X": 120,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_5",
+                "X": 96,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_5",
+                "X": 96,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_5",
+                "X": 96,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_5",
+                "X": 96,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_5",
+                "X": 96,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_5",
+                "X": 96,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_5",
+                "X": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_5",
+                "X": 96,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_5",
+                "X": 96,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_5",
+                "X": 96,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_5",
+                "X": 96,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_9",
+                "X": 192,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_9",
+                "X": 192,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_9",
+                "X": 192,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_9",
+                "X": 192,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_9",
+                "X": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_9",
+                "X": 192,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_9",
+                "X": 192,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_9",
+                "X": 192,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_9",
+                "X": 192,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_9",
+                "X": 192,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_9",
+                "X": 192,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_10",
+                "X": 216,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_10",
+                "X": 216,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_10",
+                "X": 216,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_10",
+                "X": 216,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_10",
+                "X": 216,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_10",
+                "X": 216,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_10",
+                "X": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_10",
+                "X": 216,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_10",
+                "X": 216,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_10",
+                "X": 216,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_10",
+                "X": 216,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_11",
+                "X": 240,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_11",
+                "X": 240,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_11",
+                "X": 240,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_11",
+                "X": 240,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_11",
+                "X": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_11",
+                "X": 240,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_11",
+                "X": 240,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_11",
+                "X": 240,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_11",
+                "X": 240,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_11",
+                "X": 240,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_11",
+                "X": 240,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_12",
+                "X": 264,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_12",
+                "X": 264,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_12",
+                "X": 264,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_12",
+                "X": 264,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_12",
+                "X": 264,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_12",
+                "X": 264,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_12",
+                "X": 264,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_12",
+                "X": 264,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_12",
+                "X": 264,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_12",
+                "X": 264,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_12",
+                "X": 264,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_14",
+                "X": 312,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_14",
+                "X": 312,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_14",
+                "X": 312,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_14",
+                "X": 312,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_14",
+                "X": 312,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_14",
+                "X": 312,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_14",
+                "X": 312,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_14",
+                "X": 312,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_14",
+                "X": 312,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_14",
+                "X": 312,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_14",
+                "X": 312,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b7_13",
+                "X": 288,
+                "Y": 144,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b4_13",
+                "X": 288,
+                "Y": 72,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b5_13",
+                "X": 288,
+                "Y": 96,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b6_13",
+                "X": 288,
+                "Y": 120,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b3_13",
+                "X": 288,
+                "Y": 48,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b2_13",
+                "X": 288,
+                "Y": 24,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b1_13",
+                "X": 288,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b8_13",
+                "X": 288,
+                "Y": 168,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b9_13",
+                "X": 288,
+                "Y": 192,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b11_13",
+                "X": 288,
+                "Y": 240,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "b10_13",
+                "X": 288,
+                "Y": 216,
+                "Width": 24,
+                "Height": 24,
+                "Visible": false,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Button",
+            "Name": "start",
+            "X": 396,
+            "Y": 72,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_action.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "apple",
+            "X": 48,
+            "Y": 48,
+            "Width": 24,
+            "Height": 24,
+            "Visible": false,
+            "RelativeFilename": "apple.png"
+          },
+          {
+            "Type": "Box",
+            "Name": "obj",
+            "X": 146,
+            "Y": 122,
+            "Width": 20,
+            "Height": 20,
+            "Visible": false,
+            "Color": {
+              "Red": 254,
+              "Green": 189,
+              "Blue": 23
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "rep10",
+            "X": 351,
+            "Y": 39,
+            "Width": 16,
+            "Height": 16,
+            "Visible": false,
+            "Color": {
+              "Red": 158,
+              "Green": 118,
+              "Blue": 25
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "rep9",
+            "X": 335,
+            "Y": 39,
+            "Width": 16,
+            "Height": 16,
+            "Visible": false,
+            "Color": {
+              "Red": 158,
+              "Green": 118,
+              "Blue": 25
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "rep8",
+            "X": 383,
+            "Y": 23,
+            "Width": 16,
+            "Height": 16,
+            "Visible": false,
+            "Color": {
+              "Red": 158,
+              "Green": 118,
+              "Blue": 25
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "rep7",
+            "X": 367,
+            "Y": 23,
+            "Width": 16,
+            "Height": 16,
+            "Visible": false,
+            "Color": {
+              "Red": 158,
+              "Green": 118,
+              "Blue": 25
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "rep6",
+            "X": 351,
+            "Y": 23,
+            "Width": 16,
+            "Height": 16,
+            "Visible": false,
+            "Color": {
+              "Red": 158,
+              "Green": 118,
+              "Blue": 25
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "rep5",
+            "X": 335,
+            "Y": 23,
+            "Width": 16,
+            "Height": 16,
+            "Visible": false,
+            "Color": {
+              "Red": 158,
+              "Green": 118,
+              "Blue": 25
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "rep4",
+            "X": 383,
+            "Y": 7,
+            "Width": 16,
+            "Height": 16,
+            "Visible": false,
+            "Color": {
+              "Red": 158,
+              "Green": 118,
+              "Blue": 25
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "rep3",
+            "X": 367,
+            "Y": 7,
+            "Width": 16,
+            "Height": 16,
+            "Visible": false,
+            "Color": {
+              "Red": 158,
+              "Green": 118,
+              "Blue": 25
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "rep2",
+            "X": 351,
+            "Y": 7,
+            "Width": 16,
+            "Height": 16,
+            "Visible": false,
+            "Color": {
+              "Red": 158,
+              "Green": 118,
+              "Blue": 25
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "rep1",
+            "X": 335,
+            "Y": 7,
+            "Width": 16,
+            "Height": 16,
+            "Visible": false,
+            "Color": {
+              "Red": 158,
+              "Green": 118,
+              "Blue": 25
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "goHome",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithIcon1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionBlock",
+              "ActionComponent": "Kaca_naslovnica"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "start"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "drawMaze"
+            }
+          },
+          {
+            "InteractionName": "goU",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonU"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "goU"
+            }
+          },
+          {
+            "InteractionName": "goR",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonR"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "goR"
+            }
+          },
+          {
+            "InteractionName": "goD",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonD"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "goD"
+            }
+          },
+          {
+            "InteractionName": "goL",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonL"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "goL"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "Igre",
+    "Resolution": {
+      "Width": 480,
+      "Height": 272
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Seznam",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 480,
+        "Height": 272
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32H7",
+    "SubFamily": "STM32H750 Value line",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m7",
+    "ProjectFile": "../STM32H750B-DK.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "Vector",
+      "Video"
+    ]
+  },
+  "Version": "4.22.1",
+  "CreatedBy": "4.22.1"
+}
